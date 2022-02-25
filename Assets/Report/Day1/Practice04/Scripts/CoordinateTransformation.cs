@@ -99,7 +99,6 @@ public class CoordinateTransformation : MonoBehaviour
         _vertices[6] = getVertex(farFrustomWidth * -0.5f, farFrustumHeight * 0.5f, far);
         _vertices[7] = getVertex(farFrustomWidth * 0.5f, farFrustumHeight * 0.5f, far);
 
-        // VP行列を適用する
         for (int i = 0; i < _vertices.Length; i++)
         {
             // 検証のため頂点情報を4次元に
