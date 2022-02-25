@@ -46,11 +46,11 @@ public class CoordinateTransformation : MonoBehaviour
         
         var colors = new Color[]
         {
-            new Color(0.0f, 0.0f, 0.0f), // 001
-            new Color(1.0f, 0.0f, 0.0f), // 100
-            new Color(0.0f, 1.0f, 0.0f), // 010
-            new Color(1.0f, 1.0f, 0.0f), // 110
-            new Color(0.0f, 0.0f, 1.0f), // 
+            new Color(0.0f, 0.0f, 0.0f),
+            new Color(1.0f, 0.0f, 0.0f),
+            new Color(0.0f, 1.0f, 0.0f),
+            new Color(1.0f, 1.0f, 0.0f),
+            new Color(0.0f, 0.0f, 1.0f),
             new Color(1.0f, 0.0f, 1.0f),
             new Color(0.0f, 1.0f, 1.0f),
             new Color(1.0f, 1.0f, 1.0f),
@@ -111,6 +111,7 @@ public class CoordinateTransformation : MonoBehaviour
             // W除算
             var vertex3 = vertex2 / vertex2.w;
 
+            // 頂点変換の可視化
             switch (_type)
             {
                 case VisualizeType.VP:
